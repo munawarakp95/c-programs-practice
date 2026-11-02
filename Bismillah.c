@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 // lets start doing c programs
-=======
-//bismillah 
-
-
->>>>>>> duplicate
 
 
 //bismillah 
