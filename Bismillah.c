@@ -1,7 +1,6 @@
 //bismillah 
 
 
-// lets start doing c programs
 
 
 #include<stdio.h>
@@ -11,3 +10,4 @@ int main()
     return 0;
   
 }
+// lets start doing c programs
