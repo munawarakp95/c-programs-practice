@@ -32,5 +32,17 @@ int main()
   //printf("size=%zu\n",sizeof(name)); not possible
   // it returns total memory allocated
 
+  /*P9.3 Program to print the address and characters (")i' the string usin_
+pointer*/
+
+char str[]="India";
+char *p;
+p=str;
+while(*p!='\0')
+{
+printf ("Character = %c\n", *p) ;
+printf("Address=%u\n",p) ;
+p++;
+  }
   return 0;
 }

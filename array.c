@@ -42,7 +42,6 @@ int main()
 {
     int num[5];
     
-   printf("enter 5 numbers\n");
     for (int i=0 ; i<5;i++)
    {
     printf("enter number[%d]=\n",i);
