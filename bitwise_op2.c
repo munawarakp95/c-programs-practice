@@ -1,5 +1,5 @@
 /* 
-Seting a bit on:
+Setting a bit on:
  1-left shift 1 to that position
  2.OR with the number
        7654 3210
@@ -8,7 +8,7 @@ Seting a bit on:
  -----------------
    (|) =1011 1101 -->189
 
-clearing bit
+clearing a bit
  1-left shift 1 to that position
  2-flip the 1(~)
  3-AND with value.
@@ -24,6 +24,17 @@ toggle a bit
   1-left shift 1 to that position
   2- XOR     
 
+
+Get a bit:
+    1011 0101
+(&) 0001 0000    (1<<4)
+   ----------
+    0001 0000    (>>4)
+  1-left shift 1 to that position
+  2-AND
+  3-Right shift 
+
+
  */
 
  #include<stdio.h>
@@ -34,7 +45,7 @@ toggle a bit
   
   //set bit
   value=value|(1<<3);
-  printf("value: %d\n",value);
+  printf("value after setting: %d\n",value);
 
   //clear bit
   value=(value)&(~(1<<3));
@@ -45,7 +56,7 @@ toggle a bit
   value=value^(1<<4);
   printf("value after toggling: %d\n",value);
 
-
-  
+  value =(value&(1<<2))>>2;
+  printf("value at 2 position: %d\n",value);
    return 0;
  }
