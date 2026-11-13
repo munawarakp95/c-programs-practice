@@ -15,9 +15,11 @@ int main()
     char string[20];
     printf("enter your string:\n");
     //scanf("%s",string);
-    fgets(string ,sizeof(string),stdin);
+    fgets(string ,sizeof(string),stdin);           //here a \n is added when you enter.
+
     int length=strlen(string);
-    printf("length of your string:%d\n",length);
+
+    printf("length of your string:%d\n",length);   //length=length+'\n'.
 
     return 0;
 
