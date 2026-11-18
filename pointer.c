@@ -7,7 +7,7 @@
  int *ptr; to store address of something
  ptr 
  &ptr address of pointer
-
+*/
 int main()
 {
 // & methode
